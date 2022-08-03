@@ -1,0 +1,114 @@
+body, html {
+    background-color: #220000;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    color: blue;
+    font-family: Georgia, serif;
+    overflow: hidden;
+}
+#container {
+    height: 200px;
+    position: relative;
+    /* border: 3px solid white; */
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#title {
+    height: 82px;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    
+}
+#simmer {
+    position: absolute;
+    top: 20px;
+    margin-left: 50px;
+    color: white;
+    filter: opacity(0.6) drop-shadow(0 0 0 #220000);
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+.nav-item {
+    margin: auto;
+    height: 40px;
+    width: 180px;
+}
+#hambuger {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+}
+img.burg {
+    filter: opacity(0.2) drop-shadow(0 0 0 #220000);
+}
+.menu_id {
+    position: relative;
+    bottom: 10px;
+    color: white;
+    filter: opacity(0.6) drop-shadow(0 0 0 #220000);
+    font-size: 20px;
+    display: inline;
+    margin-left: 10px;
+    font-family: Georgia, serif;
+}
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    /* position: absolute; */
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 26px;
+    display: none;
+    color: white;
+    background-color: #220000;
+}
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Georgia, serif;
+    color: white;
+}
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #330000
+}
+  /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {
+    display: block;
+}
+button {
+    background-color: #220000;
+    border: none;
+}
+#centre {
+    height: 80vh;
+    display: grid;
+    place-content: center;
+}
+#info  {
+    background-color: black;
+}
+a, #permalink {
+    color: black
+}
+#color, #font, #weight, #bevel {
+    background-color: black;
+}

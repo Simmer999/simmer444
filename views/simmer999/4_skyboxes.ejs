@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/skyStyle.css">    
+    <link rel="stylesheet" href="/public/style.css">
+
+    <title>4_skyboxes</title>
+</head>
+<body>
+    <!-- <div id="title"> <p id="simmer">simmer999.org</p></div>
+    <nav>
+        <button class="nav-item dropdown">
+            <div id="hamburger" class="dropbtn"><img class="burg" src="../public/burger3.png" alt="burger">
+                <span class="menu_id">Menu</span>
+                <div class="menu_id dropdown-content">
+                    <a href="/">Home</a>
+                    <a href="skybox">Skybox</a>
+                    <a href="4_skyboxes">4 Skyboxes</a> 
+                    <a href="ocean">Ocean</a>                   
+                    <a href="space">Space Doughnut</a>
+                    <a href="stars">Star Vortex</a>
+                    <a href="star_Lines">Star Lines</a>
+                    <a href="sphere">Sphere</a>
+                </div>
+            </div>
+        </button>
+        <button class="nav-item dropdown">
+            <div id="hamburger" class="dropbtn"><img class="burg" src="../public/burger3.png" alt="burger">
+                <span class="menu_id">Sites</span>
+                <div class="menu_id dropdown-content">
+                    <a href="https://threejs.org/">THREE.js</a>
+                    <a href="https://www.youtube.com/watch?v=ZYi0xGp882I">BufferGeom</a>
+                    <a href="https://www.youtube.com/watch?v=thVl4UOQSEM">Texturing</a>
+                    <a href="https://tympanus.net/codrops/2019/10/08/creating-a-water-like-distortion-effect-with-three-js/">Rippling</a>
+                    <a href="https://www.youtube.com/watch?v=GeNjyb8UBKM">Teleport</a>
+                </div>
+            </div>
+        </button>
+        <button class="nav-item dropdown">
+            <div id="hamburger" class="dropbtn"><img class="burg" src="../public/burger3.png" alt="burger">
+                <span class="menu_id">Enter</span>
+                <div class="menu_id dropdown-content">
+                    <a href="https://simmer222.herokuapp.com/">Memory App</a>
+                    <a href="experiment_23/login">Experiment</a>
+
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </button>
+        <button class="nav-item dropdown">
+            <div id="hamburger" class="dropbtn"><img class="burg" src="../public/burger3.png" alt="burger">
+                <span class="menu_id">About</span>
+                <div class="menu_id dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </button>
+    </nav>
+</div> -->
+<%- include ('../partials/navBar') %>
+    <div id="loading">
+        <h1>Three.js SkyBoxes</h1>
+        <div>Loading...</div>
+      </div>
+        <div class="drag">Click And Drag the screen to move around</div>
+      <div class="buttons">
+        <button id="space">Space</button>
+        <button id="mountains">Mountains</button>
+          <button id="water">Water</button>
+        <button id="lava">Lava</button>
+      <button id="autoRotate">Auto Rotate</button>
+      
+      <button id="zoom">Outside Box</button>
+      
+      </div>
+      
+      
+      <script src="https://threejs.org/build/three.min.js"></script>
+      <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+      <script src="/public/src/4_skyboxes.js"></script>
+</body>
+</html>

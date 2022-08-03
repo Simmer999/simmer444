@@ -1,0 +1,29 @@
+<%- include('../../partials/membersHead'); %>
+<link rel="stylesheet" type="text/css" href="/public/cssFiles/members.css">
+<link rel="stylesheet" type="text/css" href="/public/cssFiles/navbar_members.css">
+</head>
+<body>
+<section>
+    <%- include('../../partials/navbar_members'); %>
+    <div class='spacer'></div> 
+
+
+    <div class='purpleBox'>
+        <div style="height: 500px;">
+            <div>
+                <a href=""><h3><%= Essay.title %></h3></a>
+                    <h4><%= Essay.author %></h4>
+            </div> 
+            <div>
+                <p><%= Essay.Collection_title %></p>
+            </div>
+            <br>
+            <div>
+            <p class="body_container"><%= Essay.body %></p>
+        </div>
+    </div>
+    </div>
+
+  
+</section>
+<%- include ('../../partials/footer') %>
