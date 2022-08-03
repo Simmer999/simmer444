@@ -1,0 +1,49 @@
+html  {
+    height: 100%;
+}
+body { 
+    min-height: 100%;
+    margin: 0; 
+    overflow: hidden; 
+    background-color: #00000f;
+    position: relative;
+}
+#directions {
+    position: absolute;
+    height: 100px;
+    width: 162px;
+    background-color: #000000;
+    right: 20%;
+    top: 40%;
+    animation-name: myAnimation;
+    animation-duration: 4000ms;
+}
+@keyframes myAnimation {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.subs {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+#sub01 {
+    border-bottom: 1px solid white;
+}
+p {
+    padding: 15px;        
+    margin: auto;  
+}
+a {
+    color: white;
+    text-decoration: none;
+      
+}
+

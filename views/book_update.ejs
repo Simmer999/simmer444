@@ -1,0 +1,41 @@
+<%- include('partials/membersHead'); %>
+<link rel="stylesheet" type="text/css" href="/css/members.css">
+<link rel="stylesheet"  type="text/css" href="/css/navbar_members.css">
+</head>
+<body>
+<section>
+    <%- include('partials/navbar_members'); %>
+    <div class='spacer'></div>
+    <form class="purpleBox" action="/book_update" method='POST'>
+        <input type="hidden" name="_method" value="<%= user._id %>">            
+        <!-- This goes to the book_update function in ..api/routes/books.js. -->
+    <p style="color:white">Update and submit to save.</p> 
+    <br>           
+      
+        <div id="titleDiv" >
+            <label for="title">Title</label>                   
+            <button id="updateButton" type="submit" class="xx"> Submit </button>
+            <br>
+
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input style="color:blueviolet" class="inputClass" type="text" name='title' value="<%= user.title %>" placeholder='Enter book title' required/>
+        </div>
+        <br>
+        <div>
+            <label for="author">author</label>
+            <br>
+            <input class="inputClass" type="text" name="author" value="<%= user.author %>" placeholder="Enter author" required/>
+        </div>
+        <br>
+        <div >
+            <label for="contents">Contents</label>
+            <br>
+          <textarea autofocus autoresize name="contents"  cols="60" rows="10" value="" placeholder="Enter content" required><%= user.contents%></textarea>
+<br>
+        <br>
+
+    </form>
+  
+
+<section>
+    <%- include('include/_footer') %>

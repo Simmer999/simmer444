@@ -1,0 +1,51 @@
+<%- include('partials/membersHead'); %>
+<link rel="stylesheet" type="text/css" href="/css/members.css">
+<link rel="stylesheet" type="text/css" href="/css/navbar_members.css">
+</head>
+<body>
+<section>
+    <%- include('partials/navbar_members'); %>
+    <div class='spacer'></div>
+
+
+ <form class="purpleBox" method="POST" action="/" id="update_user">
+    <p style="color:#dd00dd">Update and submit to save.</p> 
+    <br> 
+    <div class="new_user">
+        <div class="form-group">
+
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <label for="title" class="text-light">Title</label>
+            
+            <button id="updateButton" type="submit" class="xx">Submit</button>
+            <br>
+            <input id="titleInput" type="text" name="title" value="<%= user.title%>" placeholder="title">            
+        </div>
+        <br>
+        <div>
+            <label for="author">Author</label> 
+            <br>           
+            <input class="inputClass" type="text" name="author" value="<%= user.author %>" placeholder="author">
+        </div>
+        <br>
+        <div>
+            <label for="contents">Table of Contents</label>
+            <br>
+            <textarea autofocus autoresize wrap="hard" id="textareaContent" type="text" cols="50" rows="20" name="contents" value="" placeholder="contents"><%= user.contents%></textarea>
+        </div>
+        <br>
+        <br>
+
+        <div class="form-group">
+        </div>
+
+    </div>
+</form>
+<button id="backButton" onclick="history.back()">Back to All Users</button>  
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

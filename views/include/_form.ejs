@@ -1,0 +1,38 @@
+ <!-- form handling -->
+ <form class="purpleBox" action="/api/users" method="POST" id="add_user">
+        <div>
+        <h4 class="text-dark">New Book</h4>
+        <span class="text-light">Use the form below to create a new book</span>            
+        </div>
+        <br>
+        <div class="new_user">
+            <div class="form-group">
+                
+                <label for="title" class="text-light">Title</label>
+                <input type="hidden" name="id" value="">
+
+                <button id="updateButton" type="submit" class="xx">Submit</button>
+                <br>
+                <input autofocus type="text" name="title" value="" placeholder="title">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="author" class="text-light">Author</label>
+                <br>
+                <input type="text" name="author" value="" placeholder="name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="contents" class="text-light">Table of Contents</label>
+                <br>
+                <textarea autoresize wrap="hard" id="textareaContent" type="text" cols="50" rows="20" name="contents" value="" placeholder="contents"></textarea>
+
+            </div>
+    
+
+            <!-- <div class="form-group">
+                <button type="submit" class="btn text-dark update">Save</button>
+            </div> -->
+        </div>
+   
+</form>

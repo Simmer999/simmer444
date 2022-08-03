@@ -1,13 +1,17 @@
 {
-  "name": "june11",
+  "name": "simmer444",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "crud",
+    "mongodb"
+  ],
+  "author": "Simmer",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
@@ -18,7 +22,9 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
     "mongoose": "^6.4.4",
+    "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "three": "^0.141.0",

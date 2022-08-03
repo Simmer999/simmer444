@@ -1,0 +1,29 @@
+<%- include('partials/membersHead'); %>
+<link rel="stylesheet" href="/css/members.css">
+</head>
+<main>
+
+    <h3 class='purpleBox'>Login Page</h3>
+    <form class='formContainer' action="login" method='POST'>
+        <div>
+            <label for="email">Email</label>
+            <input class="form-input" type="email" name='email' placeholder='Enter Email'/>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input class="form-input" type="password" name='password' placeholder='Enter Password'>
+        </div>
+        <br>
+        <button id="login-Btn" type='submit' class='xx'>Login</button>
+        <br>
+        <br>
+        <p>No account yet? <a class='links' href="/register"> Register</a></p>
+        <br>
+        <p >Home Page <a class='links' href="/">Home</a></p>
+    </form> 
+    <div class='home'>
+        <button class='home_button'> <a class='links' href="http://www.simondevine.org/">Home</a></button>
+    </div>
+</main>
+<%- include ('partials/footer') %>

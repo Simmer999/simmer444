@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/cssFiles/index.css">
-    <title>test 1</title>
+<%- include('partials/membersHead'); %>
+<link rel="stylesheet" type="text/css" href="/css/members.css">
+<link rel="stylesheet" type="text/css" href="/css/navbar_members.css">
 </head>
 <body>
-    <div class="cubeContainer">
-        <a href="cube">ENTER</a>
+    <%- include('partials/navbar_members'); %>
+    <div class='spacer'></div>
+ 
+        <div >
+            <a href="/add-user" class="button_addUser">
+                <span id='add_userButton' class="text-gradient">Add a New Book <i class="fas fa-user"></i></span>
+            </a>
+        </div>
+        <form class="purpleBox purpleBoxXX" class="" action="/" method="POST">
+            <%- include('include/_show') %>
+        </form>
     </div>
-</body>
-</html>
+    <!-- <script>
+document.getElementById("demo").innerHTML = "Page path is " + window.location.pathname;
+    </script> -->
+<%- include('include/_footer') %>
