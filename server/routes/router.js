@@ -144,8 +144,8 @@ console.log(' Name ' + name+ ' email :' + email+ ' pass:' + password);
 //==========================================================
 //==========================================================
 //==========================================================
-route.get('/simmer999/home', (req, res) => {
-    res.render('simmer999/home')
+route.get('/home', (req, res) => {
+    res.render('home')
 })
 
 

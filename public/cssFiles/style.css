@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- <style>
-        body, html {
+body, html {
     background-color: #220000;
     padding: 0;
     margin: 0;
@@ -117,7 +112,3 @@ a, #permalink {
 #color, #font, #weight, #bevel {
     background-color: black;
 }
-
-    </style> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>simmer999</title>
