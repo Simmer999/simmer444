@@ -145,8 +145,16 @@ console.log(' Name ' + name+ ' email :' + email+ ' pass:' + password);
 //==========================================================
 //==========================================================
 route.get('/home', (req, res) => {
-    res.render('home')
+    res.render('simmer999/home')
 })
-
+route.get('/skybox', (req, res) => {
+    res.render('simmer999/skybox')
+})
+route.get('/home', (req, res) => {
+    res.render('simmer999/home')
+})
+route.get('/skybox', (req, res) => {
+    res.render('simmer999/skybox')
+})
 
 module.exports = route

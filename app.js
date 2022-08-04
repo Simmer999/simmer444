@@ -46,6 +46,3 @@ app.use('/', poemsRoutes);
 app.use('/', require('./api/routes/index'))
 app.use('/users', require('./api/routes/users'))
 
-app.get("/noteTaker", (req, res) =>{
-    res.render("members/getPages/noteTaker")
-})
