@@ -153,5 +153,17 @@ route.get('/skybox', (req, res) => {
 route.get('/4_skyboxes', (req, res) => {
     res.render('simmer999/4_skyboxes')
 })
+route.get('/ocean', (req, res) => {
+    res.render('simmer999/ocean')
+})
+route.get('/star_lines', (req, res) => {
+    res.render('simmer999/star_lines')
+})
+route.get('/sphere', (req, res) => {
+    res.render('simmer999/sphere')
+})
+route.get('/space', (req, res) => {
+    res.render('simmer999/space')
+})
 
 module.exports = route

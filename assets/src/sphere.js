@@ -32,7 +32,7 @@ function init() {
 
     let envmaploader = new THREE.PMREMGenerator(renderer)
 
-    new RGBELoader().setPath('/public/textures/').load('cayley_interior_4k.hdr', function(hdrmap) {
+    new RGBELoader().setPath('/img/textures/').load('cayley_interior_4k.hdr', function(hdrmap) {
           
         let envmap = envmaploader.fromCubemap(hdrmap)
         let texture = new THREE.CanvasTexture(new FlakesTexture())
