@@ -150,11 +150,8 @@ route.get('/home', (req, res) => {
 route.get('/skybox', (req, res) => {
     res.render('simmer999/skybox')
 })
-route.get('/home', (req, res) => {
-    res.render('simmer999/home')
-})
-route.get('/skybox', (req, res) => {
-    res.render('simmer999/skybox')
+route.get('/4_skyboxes', (req, res) => {
+    res.render('simmer999/4_skyboxes')
 })
 
 module.exports = route
