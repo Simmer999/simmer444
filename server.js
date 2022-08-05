@@ -58,9 +58,9 @@ app.use('/src', express.static(path.resolve(__dirname, "assets/src")))
 app.use('/', require('./server/routes/router'))
 // app.use('/', require('./server/routes/users'))
 // app.use('/', require('./server/routes/books'))
-app.use('/', require('./api/routes/index'))
+// app.use('/', require('./api/routes/index'))
 // app.use('/users', require('./api/routes/users'))
-app.use('/', require('./api/routes/indexRoutes/mianLogicRoute'))
+// app.use('/', require('./api/routes/indexRoutes/mianLogicRoute'))
 
 // port listening and confirmation
 app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
