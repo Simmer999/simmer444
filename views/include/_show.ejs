@@ -6,7 +6,7 @@
     <a href="/update-user?id=<%= users[i]._id%>"><h4 id='aTitle'><%= users[i].title %></h4></a>
     <div><%= users[i].author %></div>
     <!-- <div><%= users[i].contents %></div> -->
-    <textarea autoresize wrap="hard" id="textareaContent" type="text" cols="50" rows="20" name="contents" value="" placeholder="contents"><%= users[i].contents %></textarea>
+    <textarea autoresize wrap="hard" id="textareaContent" type="text" cols="50" rows="12" name="contents" value="" placeholder="contents"><%= users[i].contents %></textarea>
     <td>
         <p class="modify" >modify </p><a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update">
             <span class="modifySymbol"><i class="fas fa-pencil-alt"></i></span>
