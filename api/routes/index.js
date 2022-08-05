@@ -25,21 +25,11 @@ router.get('/dashboard',ensureAuthenticated,(req, res) => {
         user: req.user
     });
 })
-// router.get('/categories', (req, res) => {
-//     res.render('newPages/categories')
-// })
+
 router.get('/members/newPages/categories', (req, res) => {
     res.render('members/newPages/categories')
 })
-// router.get('/newStuff', (req, res) => {
-//     res.render('newStuff')
-// })
-// router.get('/getStuff', (req, res) => {
-//     res.render('corePages/getStuff')
-// })
-// router.get('/getStuff', (req, res) => {
-//     res.render('getStuff')
-// })
+
 router.get('/login',(req,res)=>{
     res.render('login');
 })

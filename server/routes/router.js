@@ -10,6 +10,7 @@
 //Modules
 const express = require('express');
 const route = express.Router()
+const {ensureAuthenticated} = require('../../api/config/auth') 
 const User = require("../model/user");
 const bcrypt = require('bcrypt');
 const passport = require('passport');
@@ -43,6 +44,11 @@ route.get('/login', (req, res) => {
 
 route.get('/dashboard', (req, res) => {
     res.render('memoryApp/dashboard')
+})
+route.get('/dashboard',ensureAuthenticated,(req, res) => {
+    res.render('memoryApp/dashboard',{
+        user: req.user
+    });
 })
 
 route.get('/directory', (req, res) => {

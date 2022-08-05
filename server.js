@@ -27,18 +27,17 @@ require('./api/config/passport')(passport);
 
 //-----------------------------------------------
 
+// mongodb connection
 const connectDB = require('./server/database/connection');
-
-
 
 dotenv.config( { path : 'config.env'} )
 const PORT = process.env.PORT || 8080
 
+connectDB();
 // log requests
 app.use(morgan('tiny'));
 
-// mongodb connection
-connectDB();
+//-----------------------------------------------
 
 // parse request to body-parser
 app.use(bodyparser.urlencoded({ extended : true}))
@@ -63,4 +62,5 @@ app.use('/', require('./api/routes/index'))
 // app.use('/users', require('./api/routes/users'))
 app.use('/', require('./api/routes/indexRoutes/mianLogicRoute'))
 
+// port listening and confirmation
 app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
