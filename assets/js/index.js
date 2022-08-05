@@ -28,7 +28,7 @@ $("#update_user").submit(function(event){
 
 })
 
-if(window.location.pathname == "/index"){
+if(window.location.pathname == "/bookList"){
     $ondelete = $("a.delete");
     $ondelete.click(function(){
         var id = $(this).attr("data-id")

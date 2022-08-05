@@ -8,20 +8,44 @@ const controller = require('../controller/controller');
  *  @description Root Route
  *  @method GET /
  */
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+
+//=========================================
+//=========================================
+//=========================================
+//=========================================
 route.get('/', services.homeRoutes);
-route.get('/index', services.indexRoutes);
+route.get('/bookList', services.indexRoutes);
 
 route.get('/cube', (req, res) => {
     res.render('cube')
 })
-
 route.get('/welcome', (req, res) => {
-    res.render('welcome')
+    res.render('memoryApp/welcome')
 })
 
-route.get('/members/login', (req, res) => {
-    res.render('members/login')
+route.get('/login', (req, res) => {
+    res.render('memoryApp/login')
 })
+
+route.get('/dashboard', (req, res) => {
+    res.render('memoryApp/dashboard')
+})
+
+route.get('/directory', (req, res) => {
+    res.render('memoryApp/directory')
+})
+
+
+
+//=========================================
+//=========================================
+//=========================================
+//=========================================
+
 
 
 /**
@@ -51,22 +75,18 @@ const passport = require('passport');
 
 //========================================================= GET requests
 //login handle
-route.get('/login',(req,res)=>{
-    res.render('login');
-})
+// route.get('/login',(req,res)=>{
+//     res.render('login');
+// })
 //Register handle
 route.get('/register',(req,res)=>{
     res.render('register')
     })
 //logout
 
-route.get('/dashboard', (req, res) => {
-    res.render('dashboard')
-})
 
-route.get('/directory', (req, res) => {
-    res.render('directory')
-})
+
+
 
 //========================================================= GET requests
 

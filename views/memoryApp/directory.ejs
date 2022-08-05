@@ -1,11 +1,12 @@
-<%- include('partials/membersHead'); %>
+<%- include('../partials/membersHead'); %>
 <link rel="stylesheet" type="text/css" href="/css/members.css">
 <link rel="stylesheet" type="text/css" href="/css/navbar_members.css">
+<title>Directory</title>
 </head>
 <body>
 
 <section >
-    <%- include('partials/navbar_members'); %>
+    <%- include('../partials/navbar_members'); %>
 <br>
 <br>
 <div class='mainContainer'>
@@ -18,7 +19,7 @@
     <div class='purpleBox'>
         <div class="purpleBox" id='inside'>
         
-        <a href="index"><h3 class="titles">Book Titles</h3></a> 
+        <a href="bookList"><h3 class="titles">Book Titles</h3></a> 
         <br>
         <a href="/essayPresentation"><h3 class="titles">Essay Titles</h3></a>
         <br> 
@@ -29,5 +30,5 @@
     </div>
 </div>
 </section>
-<%- include ('partials/footer') %>
+<%- include ('../partials/footer') %>
 
