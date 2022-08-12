@@ -14,7 +14,7 @@ exports.homeRoutes = (req, res) => {
 
 exports.indexRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get('http://192.168.1.183:5554/api/users')
+    axios.get('http://localhost:5554/api/users')
         .then(function(response){
             res.render('memoryApp/bookList', { users : response.data });
         })
