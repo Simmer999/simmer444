@@ -3,7 +3,7 @@ const axios = require('axios');
 
 exports.homeRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get('http://127.0.0.1:5554/api/users')
+    axios.get('')
         .then(function(response){
             res.render('cube', { users : response.data });
         })
