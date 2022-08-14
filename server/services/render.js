@@ -14,7 +14,7 @@ exports.homeRoutes = (req, res) => {
 
 exports.indexRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get('http://localhost:5554/api/users')
+    axios.get('http://mongodb+srv://simmmer:snoops22@cluster0.34ahm.mongodb.net/experiment?retryWrites=true&w=majority:5554/api/users')
         .then(function(response){
             res.render('memoryApp/bookList', { users : response.data });
         })
