@@ -14,7 +14,7 @@ exports.homeRoutes = (req, res) => {
 
 exports.indexRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get(process.env.DB)
+    axios.get('http://localhost:5554/api/users' || process.env.PORT )
         .then(function(response){
             res.render('memoryApp/bookList', { users : response.data });
         })

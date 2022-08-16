@@ -41,7 +41,7 @@ resolver.setServers(['11.11.1.11']);
 const connectDB = require('./server/database/connection');
 
 dotenv.config( { path : 'config.env'} )
-const PORT = process.env.PORT || 5554
+const PORT = 5554 || process.env.PORT
 
 connectDB();
 // log requests
