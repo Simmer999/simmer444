@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const express = require('express');
 const app = express();
-
+var cors = require('cors')
 const path = require('path');
 const morgan = require('morgan');
 const flash = require('connect-flash')
@@ -13,7 +13,7 @@ const THREE = require('three')
 
 
 
-
+app.use(cors())
 //-----------------------------------------------
 app.use(flash())
 app.use(session({
