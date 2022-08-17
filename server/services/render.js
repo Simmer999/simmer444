@@ -18,9 +18,9 @@ exports.indexRoutes = (req, res) => {
         .then(function(response){
             res.render('memoryApp/bookList', { users : response.data });
         })
-        .catch(err =>{
-            res.send(err);
-        })
+        // .catch(err =>{
+        //     res.send(err);
+        // })
 }
 
 exports.add_user = (req, res) =>{
@@ -32,7 +32,7 @@ exports.update_user = (req, res) =>{
         .then(function(userdata){
             res.render("update_user", { user : userdata.data})
         })
-        .catch(err =>{
-            res.send(err);
-        })
+        // .catch(err =>{
+        //     res.send(err);
+        // })
 }
