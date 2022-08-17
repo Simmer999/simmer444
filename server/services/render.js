@@ -14,7 +14,7 @@ exports.homeRoutes = (req, res) => {
 
 exports.indexRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get('http://localhost:5554/api/users')
+    axios.get(MONGODB_URI)
         .then(function(response){
             res.render('memoryApp/bookList', { users : response.data });
         })
@@ -28,7 +28,7 @@ exports.add_user = (req, res) =>{
 }
 
 exports.update_user = (req, res) =>{
-    axios.get('http://localhost:5554/api/users', { params : { id : req.query.id }})
+    axios.get(MONGODB_URI, { params : { id : req.query.id }})
         .then(function(userdata){
             res.render("update_user", { user : userdata.data})
         })
