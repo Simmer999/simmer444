@@ -23,6 +23,7 @@ exports.indexRoutes = (req, res) => {
         })
 }
 
+
 exports.add_user = (req, res) =>{
     res.render('add_user');
 }
