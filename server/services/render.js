@@ -17,10 +17,12 @@ exports.indexRoutes = (req, res) => {
     axios.get('http://localhost:5554/api/users')
         .then(function(response){
             res.render('memoryApp/bookList', { users : response.data });
+            console.log(response.data)
         })
         .catch(err =>{
             res.send(err);
         })
+
 }
 
 exports.add_user = (req, res) =>{
