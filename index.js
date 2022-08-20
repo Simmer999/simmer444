@@ -25,19 +25,23 @@ app.use(passport.initialize())
 app.use(passport.session())
 require('./api/config/passport')(passport);
 
+
+
+
 //-----------------------------------------------
-const { Resolver } = require('dns');
-const resolver = new Resolver();
-  
-// Set Servers
-resolver.setServers(['11.11.1.11']);
-// dns.setServers([
-//     '4.4.4.4',
-//     '[2001:4860:4860::8888]',
-//     '4.4.4.4:1053',
-//     '[2001:4860:4860::8888]:1053',
-//   ]);
-// mongodb connection
+const MemoryStore = require('memorystore')(session)
+app.use(session({
+    cookie: { maxAge: 86400000 },
+    store: new MemoryStore({
+      checkPeriod: 86400000 // prune expired entries every 24h
+    }),
+    resave: false,
+    secret: 'keyboard cat'
+}))
+//-----------------------------------------------
+
+
+
 const connectDB = require('./server/database/connection');
 
 dotenv.config( { path : 'config.env'} )
