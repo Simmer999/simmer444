@@ -14,7 +14,7 @@ exports.homeRoutes = (req, res) => {
 
 exports.indexRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get('https://git.heroku.com/simmer444.gi/api/users')
+    axios.get('https://git.heroku.com/simmer444.git/api/users')
         .then(function(response){
             res.render('memoryApp/bookList', { users : response.data });
             // console.log(response.data)
