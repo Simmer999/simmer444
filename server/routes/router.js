@@ -29,19 +29,6 @@ route.delete('/api/users/:id', controller.delete);
 // 2======== MemoryApp GET route section
 route.get('/', services.homeRoutes);
 
-route.get('/db', async (req, res) => {
-    try {
-      const client = await pool.connect();
-      const result = await client.query('SELECT * FROM test_table');
-      const results = { 'results': (result) ? result.rows : null};
-      res.render('pages/db', results );
-      client.release();
-    } catch (err) {
-      console.error(err);
-      res.send("Error " + err);
-    }
-  })
-
 route.get('/bookList', services.indexRoutes);
 
 route.get('/cube', (req, res) => {
