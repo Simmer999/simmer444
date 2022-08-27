@@ -36,7 +36,7 @@ require('./api/config/passport')(passport);
 const connectDB = require('./server/database/connection');
 
 dotenv.config( { path : 'config.env'} )
-const PORT = process.env.PORT || 5554
+const PORT = process.env.PORT || 
 
 connectDB();
 // log requests

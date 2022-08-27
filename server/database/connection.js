@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
     try{
         // mongodb connection string
-        const con = await mongoose.connect(process.env.DB || 'http://localhost:5554/api/users', {
+        const con = await mongoose.connect(process.env.DB || {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             // useFindAndModify: false,
