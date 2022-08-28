@@ -29,7 +29,17 @@ route.delete('/api/users/:id', controller.delete);
 // 2======== MemoryApp GET route section
 route.get('/', services.homeRoutes);
 
-route.get('/bookList', services.indexRoutes);
+route.get('/booklist', services.indexRoutes);
+
+// route.get('/booklist', (req, res) => {
+//     res.render('memoryApp/booklist')
+// })
+
+// route.get('/booo', services.indexRoutes);
+
+// route.get('/booo', (req, res) => {
+//     res.render('memoryApp/booo')
+// })
 
 route.get('/cube', (req, res) => {
     res.render('cube')

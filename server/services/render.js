@@ -14,9 +14,9 @@ exports.homeRoutes = (req, res) => {
 
 exports.indexRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get('http://localhost:3000/api/users')
+    axios.get(`http://localhost:${process.env.PORT}/api/users`)
         .then(function(response){
-            res.render('memoryApp/bookList', { users : response.data });
+            res.render('memoryApp/booklist', { users : response.data });
             // console.log(response.data)
         })
         .catch(err =>{
@@ -30,7 +30,7 @@ exports.add_user = (req, res) =>{
 }
 
 exports.update_user = (req, res) =>{
-    axios.get('http://localhost:3000/api/users', { params : { id : req.query.id }})
+    axios.get(`http://localhost:${process.env.PORT}/api/users`, { params : { id : req.query.id }})
         .then(function(userdata){
             res.render("update_user", { user : userdata.data})
         })
